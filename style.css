@@ -53,3 +53,8 @@ h1{color:silver; font-size: 42px; }
     grid-row: 1 / 5;
  }
 
+ .amarillo {
+     background-color: yellow;
+     color: black;
+ }
+

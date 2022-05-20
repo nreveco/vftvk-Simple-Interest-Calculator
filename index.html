@@ -11,7 +11,7 @@
                 <input type="number" id="amount">
                 <br/><br/>
                 <label for="rate">Interest Rate:</label> 
-                <input type="range" id="rate" oninput="showVal(this.value)" onchange="showVal(this.value)" min="0" max="10" step="0.1"><b id="ratechange"></b>
+                <input type="range" id="rate" oninput="showVal(this.value)" onchange="showVal(this.value)" min="0" max="20" step="0.1"><b id="ratechange"></b>
                 <br/><br/>
                 <label for="years">No. of Years:</label> 
                 <select id="years">
@@ -20,6 +20,11 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
                 </select>
                 <br>
                 <button onclick="compute()">Compute Interest</button>

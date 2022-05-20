@@ -3,18 +3,20 @@ function compute()
     let p=document.getElementById('amount').value;
     let select = document.getElementById('years');
     let t = select.options[select.selectedIndex].value;
-    var currentTime = new Date();
-    var year = currentTime.getFullYear().toString();
-    year = parseInt(year) + parseInt(t);
     let r=document.getElementById('rate').value;
     let  SI=(p*t*r)/100;
-    document.getElementById('result').innerHTML="<br><b>If you deposit $ "+ number_format(p,0,",",".") +"<br>"+"at an interest rate of "+r+"%<br>You will receive an amount of $ "+number_format(SI,0,",",".")+",<br> in the year "+year+"</b>";
+
+    let currentTime = new Date();
+    let year = currentTime.getFullYear().toString();
+    year = parseInt(year) + parseInt(t);
+
+    document.getElementById('result').innerHTML="<br><b>If you deposit <span class='amarillo'>$ "+ number_format(p,0,",",".") +"</span><br>"+"at an interest rate of <span class='amarillo'>"+r+"%</span><br>You will receive an amount of <span class='amarillo'>$ "+number_format(SI,0,",",".")+"</span>,<br> in the year <span class='amarillo'>"+year+"</span></b>";
     
     
 }
 
 function showVal(v){
-    document.getElementById('ratechange').innerHTML=v;
+    document.getElementById('ratechange').innerHTML=v + "%";
 }
 
 function number_format(number, decimals, dec_point, thousands_point) {

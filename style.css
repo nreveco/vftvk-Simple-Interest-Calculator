@@ -1,4 +1,55 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;}
+h1{color:silver; font-size: 42px; }
 
+.primary {
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    padding: 0 1rem;
+    margin: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+    padding:2em;
+  }
+
+  .second {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  label {
+    font : 1.0em "typewriter", sans-serif;
+    font-weight: bold;
+    display: block;
+    width: 150px;
+    float: left;
+    padding-bottom: 4px;
+  }
+
+  input {
+    font    : 1em/1.5em "handwriting", cursive, sans-serif;
+    padding : 0 10px;
+    margin  : 0;
+    width   : 50%;
+    background : none;
+  }
+
+  select {
+    font    : 1em/1.5em "handwriting", cursive, sans-serif;
+    padding : 0 10px;
+    margin  : 0;
+    width   : 15%;
+    background : none;
+  }
+
+  input:focus, select:focus {
+    background   : rgba(0,0,0,.1);
+    border-radius: 5px;
+  }
+
+  #message {
+    grid-row: 1 / 5;
+ }
 
